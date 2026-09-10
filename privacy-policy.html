@@ -17,9 +17,6 @@
     --border: #e5e1ec;
     --callout-bg: #f1ecfc;
     --callout-border: #ddd0f7;
-    --flag-bg: #fff2ea;
-    --flag-border: #f3c9a8;
-    --flag-text: #8a4a1e;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -32,9 +29,6 @@
       --border: #2e2740;
       --callout-bg: #251e38;
       --callout-border: #3a3050;
-      --flag-bg: #2e2114;
-      --flag-border: #6b4a26;
-      --flag-text: #f0b989;
     }
   }
 
@@ -143,31 +137,6 @@
   li { margin: 0 0 10px; }
   li strong { color: var(--text); }
 
-  .flag {
-    display: inline-block;
-    background: var(--flag-bg);
-    border: 1px solid var(--flag-border);
-    color: var(--flag-text);
-    font-family: "IBM Plex Mono", ui-monospace, monospace;
-    font-size: 0.85em;
-    font-weight: 500;
-    padding: 1px 8px;
-    border-radius: 5px;
-    white-space: nowrap;
-  }
-
-  .flag-note {
-    margin-top: 56px;
-    padding: 20px 24px;
-    background: var(--flag-bg);
-    border: 1px solid var(--flag-border);
-    border-radius: 14px;
-    color: var(--flag-text);
-    font-family: "IBM Plex Mono", ui-monospace, monospace;
-    font-size: 13px;
-    line-height: 1.6;
-  }
-
   a.inline { color: var(--accent); }
 
   footer {
@@ -266,12 +235,8 @@
 
   <section id="contact">
     <h2><span class="num">09</span> Contact us</h2>
-    <p>Questions about this policy? Email us at <a class="inline" href="mailto:proofalarm@gmail.com">proofalarm@gmail.com</a>.</p>
+    <p>ProofAlarm is developed independently by Nikoloz Sharikadze, based in Tbilisi, Georgia. Questions about this policy? Email us at <a class="inline" href="mailto:proofalarm@gmail.com">proofalarm@gmail.com</a>.</p>
   </section>
-
-  <div class="flag-note">
-    <strong>Before this is final:</strong> add the developer/company legal name and address most App Store Connect submissions expect alongside a privacy policy (the contact email above is a placeholder inbox, to be replaced with a more permanent one later). Nothing else here is a placeholder — every other claim was checked against the app's actual code.
-  </div>
 
   <footer>ProofAlarm — <a href="./terms-of-use.html">Terms of Use</a></footer>
 </div>
