@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — ProofAlarm</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #faf9fc;
+    --surface: #ffffff;
+    --text: #1b1026;
+    --text-secondary: #6b6478;
+    --accent: #7c3aed;
+    --accent-text: #ffffff;
+    --border: #e5e1ec;
+    --callout-bg: #f1ecfc;
+    --callout-border: #ddd0f7;
+    --good: #1a7f4f;
+    --caution: #9a5b12;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14101d;
+      --surface: #1d1729;
+      --text: #f1eef7;
+      --text-secondary: #a79fbd;
+      --accent: #a78bfa;
+      --accent-text: #1b1026;
+      --border: #2e2740;
+      --callout-bg: #251e38;
+      --callout-border: #3a3050;
+      --good: #5fd6a0;
+      --caution: #f0b989;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); }
+  img { max-width: 100%; }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+
+  .crumbs {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin: 0 0 28px;
+    display: flex;
+    gap: 16px;
+  }
+  .crumbs a { color: var(--text-secondary); }
+  .crumbs a:hover, .crumbs a:focus-visible { color: var(--accent); }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 0 0 40px;
+  }
+
+  .callout {
+    background: var(--callout-bg);
+    border: 1px solid var(--callout-border);
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin: 0 0 48px;
+  }
+  .callout .eyebrow { margin-bottom: 10px; }
+  .callout p { margin: 0; font-size: 16px; }
+  .callout a.inline { font-weight: 600; }
+
+  section { margin: 0 0 40px; }
+
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+
+  p { margin: 0 0 14px; color: var(--text); }
+
+  .checklist { display: flex; flex-direction: column; gap: 12px; }
+  .check-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .check-item .icon {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    font-weight: 500;
+    flex-shrink: 0;
+    width: 1.4em;
+    text-align: center;
+  }
+  .check-item .icon.good { color: var(--good); }
+  .check-item .icon.caution { color: var(--caution); }
+  .check-item .title { font-weight: 600; margin: 0 0 2px; }
+  .check-item .desc { font-size: 15px; color: var(--text-secondary); margin: 0; }
+
+  a.inline { color: var(--accent); }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    color: var(--text-secondary);
+    display: flex;
+    gap: 16px;
+  }
+  footer a { color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">ProofAlarm — Support</p>
+  <p class="crumbs">
+    <a href="./privacy-policy.html">Privacy Policy</a>
+    <a href="./terms-of-use.html">Terms of Use</a>
+  </p>
+  <h1>Get help with ProofAlarm</h1>
+  <p class="meta">ProofAlarm is developed independently by Nikoloz Sharikadze, based in Tbilisi, Georgia.</p>
+
+  <div class="callout">
+    <p class="eyebrow" style="margin-bottom:8px;">Contact</p>
+    <p>Something not covered below? Email <a class="inline" href="mailto:proofalarm@gmail.com">proofalarm@gmail.com</a> and we'll get back to you.</p>
+  </div>
+
+  <section>
+    <h2>My alarm didn't ring</h2>
+    <p>Third-party alarm apps depend on a few iOS settings to ring reliably. Check these, in order of how often they're the actual cause:</p>
+    <div class="checklist">
+      <div class="check-item">
+        <span class="icon caution">!</span>
+        <div>
+          <p class="title">Force-quitting the app</p>
+          <p class="desc">Swiping ProofAlarm away in the app switcher can interrupt an in-progress mission. Avoid closing the app once an alarm is set — it doesn't need to stay open, but force-quitting it right as an alarm rings is the most common cause of a missed wake-up mission.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="icon caution">!</span>
+        <div>
+          <p class="title">Notifications</p>
+          <p class="desc">Settings → ProofAlarm → Notifications should be on, with Sounds enabled. This gates the backup alert used if your main alarm is ever interrupted.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="icon caution">!</span>
+        <div>
+          <p class="title">Background App Refresh</p>
+          <p class="desc">Settings → General → Background App Refresh → ProofAlarm should be on. Keeps the app ready to alert you even when it's not open.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="icon caution">!</span>
+        <div>
+          <p class="title">Low Power Mode</p>
+          <p class="desc">Can delay alerts when it's on overnight — best left off, or make sure your phone is charging.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="icon caution">!</span>
+        <div>
+          <p class="title">Ringtone &amp; Alerts volume</p>
+          <p class="desc">Your alarm rings at this volume, not media volume. An accidental volume-down press during the day can silently weaken it overnight — check Settings → Sounds &amp; Haptics.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="icon good">✓</span>
+        <div>
+          <p class="title">Auto-Start</p>
+          <p class="desc">Not needed on iPhone — alarms run through iOS itself (AlarmKit), no separate setup required.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:16px;">All of this is also available directly in the app — Settings → "Alarm Didn't Ring?"</p>
+  </section>
+
+  <section>
+    <h2>Subscriptions and purchases</h2>
+    <p>Manage or cancel your subscription anytime in your device Settings → [your name] → Subscriptions, or from within the app: Settings → Manage Subscription. If you believe you were charged in error, use Settings → Restore Purchases first, then contact us above if the issue persists — refunds themselves are issued by Apple under the App Store's own refund policy, not by us directly.</p>
+  </section>
+
+  <footer>
+    <a href="./privacy-policy.html">Privacy Policy</a>
+    <a href="./terms-of-use.html">Terms of Use</a>
+  </footer>
+</div>
+</body>
+</html>
