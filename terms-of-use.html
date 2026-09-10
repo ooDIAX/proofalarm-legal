@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use — ProofAlarm</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #faf9fc;
+    --surface: #ffffff;
+    --text: #1b1026;
+    --text-secondary: #6b6478;
+    --accent: #7c3aed;
+    --accent-text: #ffffff;
+    --border: #e5e1ec;
+    --callout-bg: #f1ecfc;
+    --callout-border: #ddd0f7;
+    --flag-bg: #fff2ea;
+    --flag-border: #f3c9a8;
+    --flag-text: #8a4a1e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14101d;
+      --surface: #1d1729;
+      --text: #f1eef7;
+      --text-secondary: #a79fbd;
+      --accent: #a78bfa;
+      --accent-text: #1b1026;
+      --border: #2e2740;
+      --callout-bg: #251e38;
+      --callout-border: #3a3050;
+      --flag-bg: #2e2114;
+      --flag-border: #6b4a26;
+      --flag-text: #f0b989;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); }
+  img { max-width: 100%; }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+
+  .crumbs {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin: 0 0 28px;
+  }
+  .crumbs a { color: var(--text-secondary); }
+  .crumbs a:hover, .crumbs a:focus-visible { color: var(--accent); }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 0 0 40px;
+  }
+
+  .callout {
+    background: var(--callout-bg);
+    border: 1px solid var(--callout-border);
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin: 0 0 48px;
+  }
+  .callout .eyebrow { margin-bottom: 10px; }
+  .callout p { margin: 0; font-size: 16px; }
+  .callout p + p { margin-top: 10px; }
+
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    padding: 20px 0 44px;
+    margin-bottom: 44px;
+    border-bottom: 1px solid var(--border);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+  }
+  nav.toc a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  section { margin: 0 0 40px; scroll-margin-top: 24px; }
+
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+  h2 .num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent);
+  }
+
+  p { margin: 0 0 14px; color: var(--text); }
+
+  ul { margin: 0 0 14px; padding-left: 1.3em; }
+  li { margin: 0 0 10px; }
+  li strong { color: var(--text); }
+
+  table.pricing {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 20px;
+    font-size: 16px;
+  }
+  table.pricing th, table.pricing td {
+    text-align: left;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    font-variant-numeric: tabular-nums;
+  }
+  table.pricing th {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    background: var(--surface);
+    font-weight: 500;
+  }
+
+  .flag {
+    display: inline-block;
+    background: var(--flag-bg);
+    border: 1px solid var(--flag-border);
+    color: var(--flag-text);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.85em;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+
+  .flag-note {
+    margin-top: 56px;
+    padding: 20px 24px;
+    background: var(--flag-bg);
+    border: 1px solid var(--flag-border);
+    border-radius: 14px;
+    color: var(--flag-text);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  footer a { color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">ProofAlarm — Terms of Use</p>
+  <p class="crumbs"><a href="./privacy-policy.html">← Privacy Policy</a></p>
+  <h1>The agreement between<br>you and ProofAlarm</h1>
+  <p class="meta">Effective September 11, 2026</p>
+
+  <div class="callout">
+    <p class="eyebrow" style="margin-bottom:8px;">Before you read on</p>
+    <p>ProofAlarm requires completing a short "wake-up mission" to turn off a real alarm. A free <strong>Preview Mode</strong> lets you try any mission with no subscription and no real alarm set. Setting a real alarm requires <strong>ProofAlarm Unlimited</strong>, an auto-renewing subscription billed through your Apple ID.</p>
+  </div>
+
+  <nav class="toc" aria-label="Sections">
+    <a href="#service">1. The service</a>
+    <a href="#subscriptions">2. Subscriptions</a>
+    <a href="#acceptable-use">3. Acceptable use</a>
+    <a href="#no-guarantee">4. No safety guarantee</a>
+    <a href="#warranties">5. Warranties</a>
+    <a href="#liability">6. Liability</a>
+    <a href="#ip">7. Intellectual property</a>
+    <a href="#termination">8. Termination</a>
+    <a href="#changes">9. Changes</a>
+    <a href="#law">10. Governing law</a>
+    <a href="#contact">11. Contact</a>
+  </nav>
+
+  <section id="service">
+    <h2><span class="num">01</span> The service</h2>
+    <p>ProofAlarm is an alarm clock app that requires you to complete a short wake-up mission — a math problem, a photo challenge, a memory pattern, or typing a quote — to turn off an alarm. Tapping the alert's on-screen buttons routes you into that mission.</p>
+    <p>Using your device's hardware buttons to force-close the app or power off the device is a known platform limitation outside ProofAlarm's control, not something the app can prevent — see Section 4.</p>
+  </section>
+
+  <section id="subscriptions">
+    <h2><span class="num">02</span> Subscriptions</h2>
+    <p>Scheduling a real alarm requires an active <strong>ProofAlarm Unlimited</strong> subscription. A free Preview Mode is always available with no subscription, letting you try any mission without setting a real alarm.</p>
+    <table class="pricing">
+      <thead><tr><th>Plan</th><th>Price</th><th>Renews</th></tr></thead>
+      <tbody>
+        <tr><td>Monthly</td><td>$9.99</td><td>Every month</td></tr>
+        <tr><td>Yearly</td><td>$19.99</td><td>Every year</td></tr>
+      </tbody>
+    </table>
+    <p><em>Prices shown in USD; your local App Store price may vary by region per Apple's pricing tiers.</em></p>
+    <ul>
+      <li><strong>Billing.</strong> Payment is charged to your Apple ID at confirmation of purchase.</li>
+      <li><strong>Auto-renewal.</strong> Subscriptions renew automatically unless auto-renew is turned off at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours prior to the period's end, at the price you agreed to.</li>
+      <li><strong>Managing or cancelling.</strong> Manage or cancel anytime in your device Settings → [your name] → Subscriptions. Cancelling stops future charges but does not refund the current period.</li>
+      <li><strong>Promo codes and offers,</strong> if redeemed, convert to a paid subscription automatically at the end of the offer period unless cancelled beforehand.</li>
+      <li><strong>Refunds</strong> are handled entirely by Apple under the App Store's own refund policies — we cannot issue refunds directly.</li>
+    </ul>
+  </section>
+
+  <section id="acceptable-use">
+    <h2><span class="num">03</span> Acceptable use</h2>
+    <p>You agree not to reverse-engineer, decompile, or misuse the app, and not to use it in any way that violates applicable law.</p>
+  </section>
+
+  <section id="no-guarantee">
+    <h2><span class="num">04</span> No safety guarantee</h2>
+    <p>ProofAlarm is a personal productivity tool, not a medical device or safety-critical system. We do not guarantee the app will wake you under every circumstance — a dead or powered-off device, a muted or hardware-limited volume setting, or a force-closed app can all prevent an alarm from being heard. Do not rely on ProofAlarm as your sole safeguard for any time-critical or safety-critical need.</p>
+  </section>
+
+  <section id="warranties">
+    <h2><span class="num">05</span> Disclaimer of warranties</h2>
+    <p>The app is provided "as is" and "as available," without warranties of any kind, express or implied, including fitness for a particular purpose and non-infringement.</p>
+  </section>
+
+  <section id="liability">
+    <h2><span class="num">06</span> Limitation of liability</h2>
+    <p>To the fullest extent permitted by law, we are not liable for any indirect, incidental, or consequential damages arising from your use of, or inability to use, the app — including being late, missing an obligation, or any other consequence of an alarm not sounding, however caused.</p>
+  </section>
+
+  <section id="ip">
+    <h2><span class="num">07</span> Intellectual property</h2>
+    <p>The app, its design, and its content are owned by us and protected by applicable intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to use the app for personal, non-commercial purposes.</p>
+  </section>
+
+  <section id="termination">
+    <h2><span class="num">08</span> Termination</h2>
+    <p>We may suspend or discontinue the app, or your access to it, at any time. You may stop using the app at any time by deleting it from your device.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">09</span> Changes to these terms</h2>
+    <p>We may update these Terms from time to time. Continued use of the app after a change constitutes acceptance of the updated Terms.</p>
+  </section>
+
+  <section id="law">
+    <h2><span class="num">10</span> Governing law</h2>
+    <p>These Terms are governed by the laws of <span class="flag">JURISDICTION NEEDED</span>, without regard to conflict-of-law principles.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">11</span> Contact us</h2>
+    <p>Questions about these Terms? Email us at <span class="flag">SUPPORT EMAIL NEEDED</span>.</p>
+  </section>
+
+  <div class="flag-note">
+    <strong>Before this is final:</strong> fill in <span class="flag">JURISDICTION NEEDED</span> (the state/country whose law governs the agreement — typically where the developer/company is legally based) and <span class="flag">SUPPORT EMAIL NEEDED</span>. The pricing table reflects the real Monthly/Yearly products already configured in App Store Connect and RevenueCat.
+  </div>
+
+  <footer>ProofAlarm — <a href="./privacy-policy.html">Privacy Policy</a></footer>
+</div>
+</body>
+</html>

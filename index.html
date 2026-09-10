@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProofAlarm — Legal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #faf9fc;
+    --text: #1b1026;
+    --text-secondary: #6b6478;
+    --accent: #7c3aed;
+    --border: #e5e1ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14101d;
+      --text: #f1eef7;
+      --text-secondary: #a79fbd;
+      --accent: #a78bfa;
+      --border: #2e2740;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Fraunces", Georgia, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  main { max-width: 480px; padding: 24px; text-align: center; }
+  h1 { font-size: 1.8rem; font-weight: 600; margin: 0 0 28px; }
+  .links { display: flex; flex-direction: column; gap: 12px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 14px; }
+  a {
+    color: var(--text);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+  }
+  a:hover, a:focus-visible { border-color: var(--accent); color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>ProofAlarm</h1>
+  <div class="links">
+    <a href="./privacy-policy.html">Privacy Policy</a>
+    <a href="./terms-of-use.html">Terms of Use</a>
+  </div>
+</main>
+</body>
+</html>
